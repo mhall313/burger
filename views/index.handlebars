@@ -1,34 +1,52 @@
-<h1>Burgers!</h1>
 
-<h2>Nom-a-Burger!</h2>
+{{!-- Main container --}}
+<div class="container main-container">
+    <div class="row justify-content-md-center">
+        <div class="col-lg header">
+            <img src="{{./public/assets/img/burger-clipart-cute-7.jpg}}" alt="cute-burger">
+            <h1 class="display-4">nom-a-burger!</h1>
+        </div>
+    </div>
+    {{!-- Row 1 - two columns with burgers nommed and burger 2 nom --}}
+    <div class="row justify-content-md-center">
+        <div class="col-lg-4">
+            <h2>burgers 2 nom!</h2>
+            {{#each burgers}}
+                {{#unless devoured}}
+                <div class="row items1">
+                {{> burgers/burger-block devoured=false}} 
+                </div>
+                {{/unless}}
+            {{/each}}
+        </div>
+        <div class="col-lg-4">
+            <h2>nommed burgers</h2>
+            {{#each burgers}}
+                {{#if devoured}}
+                <div class="row items2">
+                {{> burgers/burger-block devoured=true}}
+                </div>
+                {{/if}}
+            {{/each}}
+        </div>
+    </div>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-    {{!-- what is "burger-block" --}}
-      {{> burgers/burger-block devoured=false}} 
-    {{/unless}}
-  {{/each}}
-</ul>
+    {{!-- Row for middle button to add more burgers --}}
+    <div class="row justify-content-center more-burgers">
+        <div class="col-lg-8">
+            <h2>moar burgers</h2>
+            <form class="create-form" action="/" methods="POST">
 
-<h2>Nommed Burgers!</h2>
+            <div class="form-group">
+                <label for="ca">what's your next burger?</label>
+                <input type="text" id="bu" name="burger_name" class="input-form"> 
+            </div>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/if}}
-  {{/each}}
-</ul>
+            <button type="submit" class="btn change-devoured">add burger</button>
+            </form>
+        </div>
+    </div>
+</div>
 
-<h2>Moar Burgers</h2>
-<form class="create-form" action="/" methods="POST">
 
-  <div class="form-group">
-    <label for="ca">What's your Burger?</label>
-    {{!--Potentially reference Act 09 day planner on id's--}}
-    <input type="text" id="bu" name="burger_name"> 
-  </div>
 
-  <button type="submit">Add Burger</button>
-</form>

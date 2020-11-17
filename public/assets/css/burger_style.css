@@ -1,0 +1,51 @@
+body {
+    margin: 10px;
+    padding: 5px;
+    background: rgb(250, 242, 218);
+    font-family: 'Baloo Da 2', cursive;
+
+}
+.header{
+    text-align: center;
+}
+.main-container{
+    margin-top: 30px;
+    color: rgb(105, 78, 0);
+    background: rgb(250, 227, 160);
+    border-radius: 25px;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.more-burgers{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn{
+    background: rgb(105, 30, 0);
+    color: rgb(201, 168, 71);
+    margin-left: 5px;
+    border-radius: 25px;
+}
+
+.items1{
+    margin: 2px 8px 2px 8px;
+    line-height: 2.25;
+    vertical-align: middle;
+    padding:5px;
+}
+
+.items2{
+    margin: 2px 8px 2px 8px;
+    padding:5px;
+}
+
+.create-form{
+    margin-bottom: 15px;
+}
+
+.input-form{
+    margin-left:5px;
+    border-radius: 25px;
+    padding: 5px;
+}
