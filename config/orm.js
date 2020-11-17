@@ -51,7 +51,7 @@ var orm = {
         queryString += "VALUES (";
         queryString += printQuestionMarks(vals.length);
         queryString += ") ";
-        console.log(queryString);
+        //console.log(queryString);
 
         connection.query(queryString, vals, function(err, res){
             if (err) {throw err;}
@@ -59,7 +59,7 @@ var orm = {
         });
     },
 
-    updateOne: function (){ //i think this will need things passed in
+    updateOne: function (table, objColVals, condition, cb){ //i think this will need things passed in
         var queryString = "UPDATE " + table;
 
         queryString += " SET ";

@@ -1,6 +1,6 @@
 <h1>Burgers!</h1>
 
-<h2>Burgers to Devour!</h2>
+<h2>Nom-a-Burger!</h2>
 
 <ul>
   {{#each burgers}}
@@ -11,7 +11,7 @@
   {{/each}}
 </ul>
 
-<h2>Devoured Burgers!</h2>
+<h2>Nommed Burgers!</h2>
 
 <ul>
   {{#each burgers}}
@@ -21,13 +21,13 @@
   {{/each}}
 </ul>
 
-<h2>Add a Burger</h2>
+<h2>Moar Burgers</h2>
 <form class="create-form" action="/" methods="POST">
 
   <div class="form-group">
-    <label for="ca">Burger Name:</label>
+    <label for="ca">What's your Burger?</label>
     {{!--Potentially reference Act 09 day planner on id's--}}
-    <input type="text" id="bu" name="name"> 
+    <input type="text" id="bu" name="burger_name"> 
   </div>
 
   <button type="submit">Add Burger</button>

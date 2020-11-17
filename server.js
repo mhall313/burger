@@ -18,9 +18,6 @@ app.set("view engine", "handlebars");
 var routes = require("./controllers/burgers_controller.js");
 
 app.use(routes);
-
-
-
 // var orm = require("./config/orm.js");
 
 // orm.selectAll(burgers, function(result){
@@ -30,11 +27,6 @@ app.use(routes);
 //orm.insertOne()
 
 //orm.updateOne()
-
-
-
-
-
 
 
 // Start our server so that it can begin listening to client requests.
