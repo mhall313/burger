@@ -4,8 +4,8 @@ $(function() {
       var id = $(this).data("id");
       var newEat = $(this).data("neweat");
   
-      var newSleepState = {
-        sleepy: newSleep
+      var newEatState = {
+        devoured: newEat
       };
   
       // Send the PUT request.
@@ -14,7 +14,7 @@ $(function() {
         data: newEatState
       }).then(
         function() {
-          console.log("changed devoured to", newEat);
+          console.log("changed devoured to", newEatState);
           // Reload the page to get the updated list
           location.reload();
         }

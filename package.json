@@ -18,6 +18,10 @@
   "homepage": "https://github.com/mhall313/burger#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-handlebars": "^3.0.0",
     "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "handlebars-helper-css": "^0.1.0"
   }
 }
