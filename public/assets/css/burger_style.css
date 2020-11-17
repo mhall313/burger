@@ -1,7 +1,7 @@
 body {
     margin: 10px;
     padding: 5px;
-    background: rgb(250, 242, 218);
+    background: rgb(218, 250, 221);
     font-family: 'Baloo Da 2', cursive;
 
 }
@@ -10,8 +10,8 @@ body {
 }
 .main-container{
     margin-top: 30px;
-    color: rgb(105, 78, 0);
-    background: rgb(250, 227, 160);
+    color: rgb(40, 199, 119);
+    background: rgb(245, 250, 203);
     border-radius: 25px;
     box-shadow: 10px 10px 8px #888888;
 }
@@ -22,8 +22,8 @@ body {
 }
 
 .btn{
-    background: rgb(105, 30, 0);
-    color: rgb(201, 168, 71);
+    background: rgb(40, 199, 119);
+    color: rgb(218, 250, 221);
     margin-left: 5px;
     border-radius: 25px;
 }
@@ -48,4 +48,8 @@ body {
     margin-left:5px;
     border-radius: 25px;
     padding: 5px;
+}
+.burger-img{
+    margin-top: 15px;
+    border-radius:110px;
 }
