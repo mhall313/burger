@@ -21,7 +21,7 @@ router.get("/", function(req, res) {
     burger.create([
       "burger_name", "devoured"
     ], [
-      req.body.name, false
+      req.body.name, req.body.devoured
     ], function(result) {
       // Send back the ID of the new burger
       res.json({ id: result.insertId });
@@ -31,8 +31,10 @@ router.get("/", function(req, res) {
   router.put("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
     console.log("condition", condition);
+    console.log(req.body);
   
-    burger.update({
+    burger.update(
+      {
       devoured: true
     }, 
     condition, 
