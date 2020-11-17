@@ -24,7 +24,7 @@
 
   ## Screenshots
 
-   ![nom-a-burger](public\assets\img\nom-a-burger.PNG)
+   ![nom-a-burger](burger\public\assets\img\nom-a-burger.PNG)
 
   
   ## Questions
