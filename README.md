@@ -11,7 +11,7 @@
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Screenshots] (#screenshots)
+  * [Screenshots](#screenshots)
   * [Questions](#questions)
 
   ## Installation
@@ -24,7 +24,7 @@
 
   ## Screenshots
 
-   ![nom-a-burger](/public/assets/img/nom-a-burger.png)
+   ![nom-a-burger](\public\assets\img\nom-a-burger.PNG)
 
   
   ## Questions
