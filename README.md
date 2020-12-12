@@ -6,7 +6,11 @@
 
   ## Github Repo
 
-  [Burger Repo] (https://github.com/mhall313/burger)
+  [Burger Repo](https://github.com/mhall313/burger)
+
+  ## Deployed Web App
+
+  [nom-a-burger](https://protected-atoll-97608.herokuapp.com)
 
   ## Table of Contents
   * [Installation](#installation)
@@ -24,7 +28,7 @@
 
   ## Screenshots
 
-   ![nom-a-burger](burger\public\assets\img\nom-a-burger.PNG)
+   ![nom-a-burger](public\assets\img\nom-a-burger.PNG)
 
   
   ## Questions
